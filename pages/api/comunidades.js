@@ -9,7 +9,7 @@ export default async function recebedorDeRequests(request, response) {
     // Utilizar DTO ao receber o body e validar os dados.
 
     const registroCriado = await client.items.create({
-      itemType: "975965", // Id de model de comunidades criado pelo DATOCMS
+      itemType: "975965", // Id de model de comunidades criado no DATOCMS
       ...request.body
     })
 
